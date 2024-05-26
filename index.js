@@ -2,7 +2,7 @@ const { Telegraf } = require("telegraf");
 const { message } = require("telegraf/filters");
 
 const bot = new Telegraf("7488158255:AAHblSmJm7AMzEIkw0JBWc2Yeh24WIpJqkc");
-let time = 3;
+let time = 30;
 bot.on("message", async (ctx) => {
   console.log(ctx.chat.id);
   if (ctx.message.text) {
