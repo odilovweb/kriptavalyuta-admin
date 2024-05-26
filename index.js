@@ -3,7 +3,7 @@ const { message } = require("telegraf/filters");
 
 const bot = new Telegraf("7488158255:AAHblSmJm7AMzEIkw0JBWc2Yeh24WIpJqkc");
 bot.on("message", async (ctx) => {
-  console.log(ctx.message.text);
+  console.log(ctx.chat.id);
   if (
     ctx.message.text.toLowerCase().includes("salom") ||
     ctx.message.text.toLowerCase().includes("assolom alekum") ||
