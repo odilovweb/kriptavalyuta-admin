@@ -65,7 +65,19 @@ Kimda kim notcoin sotmoqchi bo'lsa ishonchli sotib berish hizmati mavjud.
 ⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️
   
 Murojaat: @Kriptavalyuta_admin ✅`,
-      { parse_mode: "HTML" }
+      {
+        parse_mode: "HTML",
+        reply_markup: {
+          inline_keyboard: [
+            [
+              {
+                text: "Savdo qilish 💸",
+                url: "https://t.me/kriptavalyuta_admin",
+              },
+            ],
+          ],
+        },
+      }
     );
   } catch (e) {
     console.log(e);
