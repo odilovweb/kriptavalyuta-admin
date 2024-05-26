@@ -2,6 +2,7 @@ const { Telegraf } = require("telegraf");
 const { message } = require("telegraf/filters");
 
 const bot = new Telegraf("7488158255:AAHblSmJm7AMzEIkw0JBWc2Yeh24WIpJqkc");
+let time = 15;
 bot.on("message", async (ctx) => {
   console.log(ctx.chat.id);
   if (
@@ -53,7 +54,7 @@ Qimmat narxda sotib oladi va 100% ishonchli ✅ `,
   }
 });
 setInterval(async () => {
-  const chatId = "-1948659067";
+  const chatId = "-1001948659067";
   try {
     await bot.telegram.sendMessage(
       chatId,
@@ -69,5 +70,12 @@ Murojaat: @Kriptavalyuta_admin ✅`,
   } catch (e) {
     console.log(e);
   }
-}, 15 * 60 * 1000);
+}, time * 60 * 1000);
+bot.command("time", (ctx) => {
+  if (ctx.chat.id == 841886966) {
+    const timeMsg = ctx.message.text.split(" ")[1];
+    time = timeMsg;
+    ctx.reply("Tayyor ✅");
+  }
+});
 bot.launch();
