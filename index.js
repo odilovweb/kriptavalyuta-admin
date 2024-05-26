@@ -5,7 +5,7 @@ const bot = new Telegraf("7488158255:AAHblSmJm7AMzEIkw0JBWc2Yeh24WIpJqkc");
 let time = 3;
 bot.on("message", async (ctx) => {
   console.log(ctx.chat.id);
-  if (ctx.message.text.toLowerCase()) {
+  if (ctx.message.text) {
     if (
       ctx.message.text.toLowerCase().includes("salom") ||
       ctx.message.text.toLowerCase().includes("assolom alekum") ||
