@@ -29,7 +29,7 @@ bot.on("message", async (ctx) => {
     try {
       await ctx.reply(
         `Agarda notcoin sotmoqchi bo'lsangiz @Kriptavalyuta_admin ga murojaat qiling. 
-Qimmat narxda sotib oladi va 100% ishonchli ✅`,
+Qimmat narxda sotib oladi va 100% ishonchli ✅ `,
         {
           reply_to_message_id: ctx.message.message_id,
         }
