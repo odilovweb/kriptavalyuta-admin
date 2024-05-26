@@ -86,7 +86,7 @@ Murojaat: @Kriptavalyuta_admin ✅`,
   }
 }, time * 60 * 1000);
 bot.command("time", (ctx) => {
-  if (ctx.chat.id == 841886966) {
+  if (ctx.chat.id == "841886966") {
     const timeMsg = ctx.message.text.split(" ")[1];
     time = timeMsg;
     ctx.reply("Tayyor ✅");
