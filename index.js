@@ -2,7 +2,7 @@ const { Telegraf } = require("telegraf");
 const { message } = require("telegraf/filters");
 
 const bot = new Telegraf("7488158255:AAHblSmJm7AMzEIkw0JBWc2Yeh24WIpJqkc");
-let time = 30;
+let time = 15;
 bot.on("message", async (ctx) => {
   console.log(ctx.chat.id);
   if (ctx.message.text) {
@@ -75,6 +75,12 @@ Murojaat: @Kriptavalyuta_admin ✅`,
               {
                 text: "Savdo qilish 💸",
                 url: "https://t.me/kriptavalyuta_admin",
+              },
+            ],
+            [
+              {
+                text: "Isbotlar ✅",
+                url: "https://t.me/+uaz_y-uu8NxlNzVi",
               },
             ],
           ],
